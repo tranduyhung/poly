@@ -5,12 +5,12 @@
 // BEM selectors
 
 @mixin e($element) {
-  &__#{$element} {
+  &-#{$element} {
     @content;
   }
 }
 @mixin m($modifier) {
-  &--#{$modifier} {
+  &-#{$modifier} {
     @content;
   }
 }
@@ -19,17 +19,17 @@
 
 @mixin mq($break) {
   @if $break == "small" {
-    @media (min-width: $brkpoint--sm) and (max-width: $brkpoint--md) {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
       @content;
     }
   }
   @else if $break == "medium" {
-    @media (min-width: $brkpoint--md + 1) {
+    @media (min-width: $brkpoint-md + 1) {
       @content;
     }
   }
   @else if $break == "large" {
-    @media (min-width: $brkpoint--lg) {
+    @media (min-width: $brkpoint-lg) {
       @content;
     }
   }
@@ -77,7 +77,7 @@
 // Image replacement
 
 @mixin img-replace($img, $w, $h, $disp: block) {
-	background-image: url('#{$path--rel}/#{$img}');
+	background-image: url('#{$path-rel}/#{$img}');
 	background-repeat: no-repeat;
 	width: $w;
 	height: $h;
@@ -101,7 +101,7 @@
     $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
 
     // Generate and output the column modifier classes 
-    &--#{$i} {
+    &-#{$i} {
       width: percentage($target / $context);
     }
   }

@@ -6,7 +6,7 @@
   @include ui-colors($ui-colors);
 }
 
-[class^="btn--"] {
+[class^="btn-"] {
   @extend %btn;
   @extend %center-align;
   margin-bottom: em(20px, 14px); 
@@ -20,3 +20,6 @@
   }
 }
 
+[class^="btn-"]:hover {
+  color: $white;
+}

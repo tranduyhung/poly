@@ -12,7 +12,7 @@
 		@extend %panel-padding;
 		@include m(centered) {
 			@extend %center-align;
-			@extend %panel-padding;
+			//@extend %panel-padding;
 		}
 	}
 }

@@ -2,36 +2,53 @@
 // Icons
 // ==========================================================================
 
-// Logo
+// Site title
 
-.site-logo {
-	@include img-replace("logo.svg", 115px, 45px, inline-block);
+//.site-title {
+//	@include img-replace("logo.svg", 115px, 45px, inline-block);
+//}
+
+.site-title {
+  font-size: 2em;
+  height: 60px;
+  display: inline-block;
+  line-height: 60px;
+  @include mq(small) {
+    font-size: 1.6em;
+  }
 }
 
 // UI
 
-.icn {
+.icon {
 
 	// Nav Toggle
 	@include m(nav-toggle) {
-		@extend %icn--ui;
-		width: 25px;
-		height: 17px;
-		border-top: solid 3px palette(grey);
-		border-bottom: solid 3px palette(grey);
-		position: relative;
-		@include p-el(before, 25px, 3px) {
-			background: palette(grey, light);
-			top: 4px;
-		}
+		@extend %icon-ui;
+		float: right;
+		height: 60px;
+		display: block;
+		font-size: 20px;
 	}
 
 	// Close
 	@include m(close) {
-		@extend %icn--ui;
-		@include img-replace("icn-close.svg", 20px, 20px); 
+		@extend %icon-ui;
 		position: absolute;
 		right: 4%;
 		top: 4%;
 	}
+}
+
+.icon-nav-toggle::after {
+    content: "";
+    font-family: FontAwesome;
+    vertical-align: middle;
+}
+
+.icon-nav-toggle::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

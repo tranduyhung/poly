@@ -11,7 +11,7 @@
   }
 }
 %nav-item-link {
-  font-weight: $font-weight--light;
+  font-weight: $font-weight-light;
   text-align: center;
   font-size: em(18px);
   display: block;
@@ -32,8 +32,8 @@
 
 %hdln-prim {
   color: palette(grey, x-dark);
-  font-weight: $font-weight--light;
-  font-size: em(42px);
+  font-weight: $font-weight-light;
+  font-size: em(32px);
   line-height: (46px/42px);
   margin-top: 0;
 }
@@ -41,9 +41,9 @@
 %hdln-sec {
   color: palette(grey, light);
   letter-spacing: $letter-space;
-  font-weight: $font-weight--thin;
+  font-weight: $font-weight-thin;
   font-size: em(24px);
-  font-family: $font-family--secondary;
+  font-family: $font-family-secondary;
 }
 
 // Buttons
@@ -51,11 +51,11 @@
 %btn {
   padding: 15px 30px;
   border: 0;
-  border-radius : $br--default;
+  border-radius : $br-default;
   color: $white;
   text-transform: uppercase;
   font-size : em(14px);
-  font-weight: $font-weight--medium;
+  font-weight: $font-weight-medium;
   transition: opacity $trns-duration;
   display: block;
   &:hover {
@@ -80,7 +80,7 @@
 
 // Icons
 
-%icn--ui {
+%icon-ui {
   line-height: 0;
   cursor: pointer;
 }

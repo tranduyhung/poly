@@ -13,11 +13,11 @@
 	margin-bottom: em(46px);
 }
 
-// Classes that begin with progbar__
+// Classes that begin with progbar-
 
-[class^="progbar__"] {
+[class^="progbar-"] {
 	@include p-el(after, 20px, 20px) {
-		border-radius: $br--round;
+		border-radius: $br-round;
 		right: -10px;
 		top: -8px;
 	}

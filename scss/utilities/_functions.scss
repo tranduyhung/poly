@@ -4,13 +4,13 @@
 
 // Import if Google Fonts URL is defined
 
-@if variable-exists(font-url--google) {
-  @import url($font-url--google);
-}
+//@if variable-exists(font-url-google) {
+//  @import url($font-url-google);
+//}
 
 // Calculate em values
 
-@function em($target, $context: $base__font-size) {
+@function em($target, $context: $base-font-size) {
   @return ($target / $context) * 1em;
 }
 
